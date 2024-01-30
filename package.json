@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@web3modal/wagmi1": "^4.0.0-544a28f1",
     "ethers": "^6.10.0",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
+    "viem": "^1.21.4",
+    "wagmi": "^1.4.13"
   },
   "devDependencies": {
     "@types/node": "^20",

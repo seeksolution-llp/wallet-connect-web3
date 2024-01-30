@@ -1,13 +1,13 @@
 "use client"
+import { useWeb3ModalState } from "@web3modal/wagmi1/react"
 import { Fragment } from "react"
+import { useAccount } from "wagmi"
 
 const WalletConnect = () => {
-
-    const projectId = process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID as string
-
+  const { address, isConnecting, isDisconnected } = useAccount()
 
     return <Fragment>
-        <w3m-button />
+        <w3m-button balance="hide"/>
     </Fragment>
 }
 
